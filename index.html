@@ -69,14 +69,16 @@
           </div>
           <div class="col-lg-7 text-center text-lg-left">
             <h3 class="display-1 text-white fw-normal">I'm</h3>
-            <h1 class="display-3 text-white text-uppercase mb-2 fw-bold my-1">
+            <h1 class="display-3 text-white text-uppercase mb-1 fw-bold my-1">
               Ahmed Osama
             </h1>
             <h1
-              class="typed-text-output d-inline font-weight-lighter text-white fs-1 fw-bold"
-            >
-              Web Developer
-            </h1>
+              class="d-inline w-auto font-weight-lighter text-danger display-1"
+              id="typed-text-output"
+            ></h1>
+            <div class="d-none" id="typed-text">
+              Web Designer, Web Developer, Front End Developer
+            </div>
           </div>
           <div class="d-flex align-items-center justify-content-center">
             <a
@@ -292,7 +294,6 @@
         </div>
       </div>
     </section>
-
     <!-- Service End  -->
     <!-- Contact Start  -->
     <section class="container-fluid py-5" id="contact">
@@ -306,14 +307,11 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="contact-form text-center">
-              <div id="success"></div>
-              <form
-                name="contactForm"
-                id="contactForm"
-                action="assets/php/send_email.php"
-                method="POST"
-                novalidate
-              >
+              <div
+                id="success"
+                class="text-danger fs-4 display-1 p-5 fw-bold"
+              ></div>
+              <form name="contactForm" id="contactForm" novalidate>
                 <div class="row">
                   <div class="control-group col-sm-6">
                     <input
@@ -442,6 +440,7 @@
     <!-- Main Js -->
     <script src="assets/js/main.js"></script>
     <!-- Contact Js  -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="assets/js/contact.js"></script>
   </body>
 </html>
