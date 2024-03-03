@@ -8,7 +8,7 @@
 
       // Collect user data from the form
       var formData = {
-        name: document.getElementById("name").value,
+        from_name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         subject: document.getElementById("subject").value,
         message: document.getElementById("message").value,
@@ -16,7 +16,7 @@
 
       // Check if any field is empty
       if (
-        formData.name === "" ||
+        formData.from_name === "" ||
         formData.email === "" ||
         formData.subject === "" ||
         formData.message === ""
