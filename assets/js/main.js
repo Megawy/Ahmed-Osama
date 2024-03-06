@@ -86,3 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // End Text Animation
+// Start Date CopyRight
+var date_copy = document.getElementById("date_copy");
+const y = new Date();
+date_copy.textContent = y.getFullYear();
+// End Date CopyRight
